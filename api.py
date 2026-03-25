@@ -7,9 +7,7 @@ def home():
     return {"message": "Autoknowmus price engine running"}
 
 @app.get("/price")
-def price(model:str, year:int, km:int, city:str):
-    
-    # Temporary test price
+def price(model: str, year: int, km: int, city: str):
     estimated_price = 1500000
 
     return {
